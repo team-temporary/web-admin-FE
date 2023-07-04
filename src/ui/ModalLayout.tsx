@@ -31,7 +31,13 @@ const Background = styled.div`
 
 const Base = styled.div`
   min-width: 480px;
-  min-height: 1100px;
+  height: 800px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   padding: 50px 80px;
   background: white;
   position: fixed;

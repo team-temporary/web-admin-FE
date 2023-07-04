@@ -8,3 +8,4 @@ export { default as Table } from './common/Table';
 export { default as SettingForm } from './mail/SettingForm';
 
 export { default as UserModal } from './modal/UserModal';
+export { default as UserDropModal } from './modal/UserDropModal';

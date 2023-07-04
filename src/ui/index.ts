@@ -10,6 +10,7 @@ export { default as Select } from './Select';
 export { default as SearchBar } from './SearchBar';
 export { default as CheckBox } from './CheckBox';
 export { default as ModalLayout } from './ModalLayout';
+export { default as Chip } from './Chip';
 
 // icons
 export { default as ICFilter } from './icons/Filter';

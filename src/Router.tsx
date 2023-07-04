@@ -10,6 +10,8 @@ import {
   MainPage,
   ProfilePage,
   ReportPage,
+  UsersReportPage,
+  UsersDropPage,
   UsersPage,
 } from '@/pages';
 import { Header, MenuTab } from '@/components';
@@ -34,6 +36,8 @@ const Router = createBrowserRouter(
       <Route path="/default" element={<ProfilePage />} />
       <Route path="/default/mail" element={<MailPage />} />
       <Route path="/users" element={<UsersPage />} />
+      <Route path="/users/drop" element={<UsersDropPage />} />
+      <Route path="/users/report" element={<UsersReportPage />} />
       <Route path="/contents" element={<ContentsPage />} />
       <Route path="/stat" element={<ReportPage />} />
     </Route>
