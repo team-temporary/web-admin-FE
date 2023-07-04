@@ -12,8 +12,8 @@ const SettingForm = () => {
         <div className="menu-wrapper" key={id}>
           <p>{menu}</p>
           <div className="checkbox-wrapper">
-            <CheckBox id="회원" />
-            <CheckBox id="관리자" />
+            <CheckBox value="회원" />
+            <CheckBox value="관리자" />
           </div>
         </div>
       ))}

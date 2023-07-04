@@ -2,7 +2,7 @@ import { styled } from 'styled-components';
 
 type Props = {
   value: string;
-  isChecked: boolean;
+  isChecked?: boolean;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
