@@ -16,6 +16,7 @@ const Base = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-bottom: 100px;
   h1 {
     padding-top: 35px;
     padding-bottom: 20px;

@@ -41,6 +41,7 @@ const Input = styled.input`
   color: #58667e;
   &::placeholder {
     font-size: 12px;
+    font-weight: 400;
     line-height: 17px;
     color: #a6b0c3;
   }

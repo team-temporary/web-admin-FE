@@ -11,7 +11,11 @@ const MailPage = () => {
             <div className="form">
               <h1>자동 메일 설정</h1>
               <div className="input-wrapper">
-                <Input placeholder="발신자 메일 주소" type="text" width="205" />
+                <Input
+                  placeholder="발신자 메일 주소"
+                  type="text"
+                  width="205px"
+                />
                 <Button types={'primary'} text="등록" />
               </div>
               <SettingForm />
@@ -45,7 +49,11 @@ const MailPage = () => {
             <div className="form">
               <h1>카카오 알림톡 설정</h1>
               <div className="input-wrapper">
-                <Input placeholder="발신자 메일 주소" type="text" width="205" />
+                <Input
+                  placeholder="발신자 메일 주소"
+                  type="text"
+                  width="205px"
+                />
                 <Button types={'primary'} text="등록" />
               </div>
               <SettingForm />

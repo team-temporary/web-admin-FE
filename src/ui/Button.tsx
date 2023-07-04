@@ -21,6 +21,7 @@ export default Button;
 const Base = styled.button<{ types: string }>`
   min-height: 38px;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 5px;
   padding: ${({ types }) => (types === 'primary' ? '10px 20px' : '10px')};

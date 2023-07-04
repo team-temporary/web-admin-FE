@@ -35,16 +35,15 @@ const Input = ({
 export default Input;
 
 const Base = styled.input<{ width: string }>`
-  min-width: ${({ width }) => `${width}px`};
+  min-width: ${({ width }) => `${width}`};
   height: 38px;
   background: #ffffff;
   border: 1px solid #eff2f5;
   padding: 10px 15px;
-  font-weight: 500;
-  font-size: 12px;
-  color: #58667e;
+  font-size: 14px;
+  color: #222531;
   &::placeholder {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     color: #a6b0c3;

@@ -1,11 +1,20 @@
 import { styled } from 'styled-components';
 
 type Props = {
-  id: string;
+  value: string;
+  isChecked: boolean;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-const CheckBox = (props: Props) => {
-  return <Base type="checkbox" {...props} />;
+const CheckBox = ({ value, isChecked, onChange }: Props) => {
+  return (
+    <Base
+      type="checkbox"
+      value={value}
+      checked={isChecked}
+      onChange={onChange}
+    />
+  );
 };
 
 export default CheckBox;

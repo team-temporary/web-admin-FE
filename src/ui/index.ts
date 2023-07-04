@@ -9,9 +9,11 @@ export { default as FilterItem } from './FilterItem';
 export { default as Select } from './Select';
 export { default as SearchBar } from './SearchBar';
 export { default as CheckBox } from './CheckBox';
+export { default as ModalLayout } from './ModalLayout';
 
 // icons
 export { default as ICFilter } from './icons/Filter';
 export { default as ICSearch } from './icons/Search';
 export { default as ICDownload } from './icons/Download';
 export { default as ICDown } from './icons/Down';
+export { default as ICClose } from './icons/Close';

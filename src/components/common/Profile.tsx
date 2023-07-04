@@ -4,7 +4,7 @@ import avatar from '/avatar.svg';
 type Props = {
   username: string;
   nickname: string;
-  image: string;
+  image?: string;
 };
 
 const Profile = ({ username, nickname, image }: Props) => {
@@ -23,12 +23,12 @@ const Profile = ({ username, nickname, image }: Props) => {
 export default Profile;
 
 const Base = styled.div`
-  width: 320px;
+  /* width: 320px; */
+  width: 100%;
   min-height: 106px;
   display: flex;
   align-items: center;
   gap: 20px;
-  font-weight: 500;
   font-size: 16px;
   color: #222531;
   line-height: 18px;

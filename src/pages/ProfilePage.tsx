@@ -50,7 +50,7 @@ const ProfilePage = () => {
             <Input
               placeholder="닉네임"
               type="text"
-              width="155"
+              width="155px"
               defaultValue={nickname}
               onChange={onChangeNickname}
             />
@@ -63,13 +63,13 @@ const ProfilePage = () => {
             <Input
               placeholder="비밀번호"
               type="password"
-              width="155"
+              width="155px"
               onChange={onChangePassword}
             />
             <Input
               placeholder="비밀번호 확인"
               type="password"
-              width="155"
+              width="155px"
               onChange={onChangePassword2}
             />
             <Button types="primary" text="재설정" onClick={onClick} />
@@ -87,8 +87,11 @@ const Base = styled.div`
   section {
     width: 100%;
     &:first-child {
+      width: 320px;
       padding-bottom: 35px;
-      border-bottom: 1px solid #eff2f5;
+    }
+    &:nth-child(2) {
+      border-top: 1px solid #eff2f5;
     }
   }
   & .wrapper {
