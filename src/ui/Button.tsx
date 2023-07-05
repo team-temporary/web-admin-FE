@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 type Props = {
-  type?: 'button' | 'submit' | 'reset';
   types: 'primary' | 'secondary';
+  type?: 'button' | 'submit' | 'reset';
   text?: string;
   children?: React.ReactNode;
   onClick?: () => void;

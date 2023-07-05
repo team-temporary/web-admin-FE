@@ -4,7 +4,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { styled } from 'styled-components';
 import logo from '/logo.svg';
 
-const Header = () => {
+type Props = {
+  isAuth: boolean;
+};
+
+const Header = ({ isAuth }: Props) => {
   const navigate = useNavigate();
   let { pathname } = useLocation();
 
@@ -53,7 +57,7 @@ const Header = () => {
             />
           ))}
         </div>
-        <button className="button-logout">로그아웃</button>
+        {isAuth && <button className="button-logout">로그아웃</button>}
       </section>
     </Base>
   );
@@ -93,6 +97,7 @@ const Base = styled.div`
   width: 100%;
   height: 105px;
   border-bottom: 1px solid #eff2f5;
+  background: #ffffff;
   > section {
     width: 1280px;
     height: 105px;

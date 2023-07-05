@@ -14,17 +14,25 @@ import {
   UsersDropPage,
   UsersPage,
 } from '@/pages';
-import { Header, MenuTab } from '@/components';
+import { Header, Login, MenuTab } from '@/components';
 import { styled } from 'styled-components';
 
 const Layout = () => {
+  const isAuth = true;
+
   return (
     <>
-      <Header />
-      <MenuTab />
-      <Container>
-        <Outlet />
-      </Container>
+      <Header isAuth={isAuth} />
+      {isAuth ? (
+        <>
+          <MenuTab />
+          <Container>
+            <Outlet />
+          </Container>
+        </>
+      ) : (
+        <Login />
+      )}
     </>
   );
 };

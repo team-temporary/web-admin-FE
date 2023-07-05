@@ -18,3 +18,4 @@ export { default as ICSearch } from './icons/Search';
 export { default as ICDownload } from './icons/Download';
 export { default as ICDown } from './icons/Down';
 export { default as ICClose } from './icons/Close';
+export { default as ICEyeSlash } from './icons/EyeSlash';
