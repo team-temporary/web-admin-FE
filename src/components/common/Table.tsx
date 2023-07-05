@@ -45,7 +45,7 @@ const Table = ({
 export default Table;
 
 const Base = styled.table`
-  width: 100%;
+  width: 1230px;
   margin-top: 20px;
   border-collapse: collapse;
 `;

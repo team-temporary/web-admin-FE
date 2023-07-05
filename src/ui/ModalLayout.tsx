@@ -30,7 +30,7 @@ const Background = styled.div`
 `;
 
 const Base = styled.div`
-  min-width: 480px;
+  min-width: 400px;
   height: 800px;
   overflow: auto;
   -ms-overflow-style: none;
@@ -38,8 +38,9 @@ const Base = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-  padding: 50px 80px;
+  padding: 50px;
   background: white;
+  border-radius: 10px;
   position: fixed;
   transform: translate(-50%, -50%);
   top: 50%;
