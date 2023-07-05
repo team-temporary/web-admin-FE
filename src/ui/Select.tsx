@@ -4,16 +4,17 @@ import { ICDown } from '.';
 
 type Props = {
   options: { id: number; option: string }[];
-  setSelectedValue: Dispatch<SetStateAction<string>>;
+  defaultValue?: string;
+  setSelectedValue?: Dispatch<SetStateAction<string>>;
 };
 
-const Select = ({ options, setSelectedValue }: Props) => {
+const Select = ({ options, defaultValue, setSelectedValue }: Props) => {
   const onChange = (e: React.ChangeEvent<HTMLSelectElement>) =>
     setSelectedValue(e.target.value);
 
   return (
     <Base>
-      <SelectBox onChange={onChange}>
+      <SelectBox onChange={onChange} defaultValue={defaultValue}>
         <option defaultValue={'전체'}>전체</option>
         {options.map(({ id, option }) => (
           <option key={id} value={option}>
@@ -29,6 +30,7 @@ const Select = ({ options, setSelectedValue }: Props) => {
 export default Select;
 
 const Base = styled.div`
+  width: 108px;
   position: relative;
   > div {
     position: absolute;

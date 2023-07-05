@@ -10,3 +10,4 @@ export { default as SettingForm } from './mail/SettingForm';
 
 export { default as UserModal } from './modal/UserModal';
 export { default as UserDropModal } from './modal/UserDropModal';
+export { default as UserReportModal } from './modal/UserReportModal';

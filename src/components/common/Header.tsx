@@ -43,21 +43,23 @@ const Header = ({ isAuth }: Props) => {
   return (
     <Base>
       <section>
-        <button onClick={() => navigate('/')}>
-          <img src={logo} alt="로고" />
-        </button>
-        <div className="menu-wrapper">
-          {HEADER_LIST.map(({ id, text }) => (
-            <Menu
-              key={id}
-              text={text}
-              isHeader
-              isSelected={text === selectedValue}
-              onClick={() => onSelect(text)}
-            />
-          ))}
+        <div className="header-wrapper">
+          <button onClick={() => navigate('/')}>
+            <img src={logo} alt="로고" />
+          </button>
+          <div className="menu-wrapper">
+            {HEADER_LIST.map(({ id, text }) => (
+              <Menu
+                key={id}
+                text={text}
+                isHeader
+                isSelected={text === selectedValue}
+                onClick={() => onSelect(text)}
+              />
+            ))}
+          </div>
         </div>
-        {isAuth && <button className="button-logout">로그아웃</button>}
+        {isAuth && <button>로그아웃</button>}
       </section>
     </Base>
   );
@@ -99,13 +101,18 @@ const Base = styled.div`
   border-bottom: 1px solid #eff2f5;
   background: #ffffff;
   > section {
-    width: 1280px;
+    width: 1230px;
     height: 105px;
     margin: 0 auto;
-    padding: 50px 25px 0 25px;
+    padding-top: 50px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 160px;
+    > .header-wrapper {
+      display: flex;
+      gap: 160px;
+    }
   }
   > img {
     width: 55px;
@@ -114,8 +121,5 @@ const Base = styled.div`
   & .menu-wrapper {
     display: flex;
     gap: 45px;
-  }
-  & .button-logout {
-    margin-left: 310px;
   }
 `;
