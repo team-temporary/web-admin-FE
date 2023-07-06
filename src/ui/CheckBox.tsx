@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
 type Props = {
-  value: string;
+  value: string | number;
   isChecked?: boolean;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };

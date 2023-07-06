@@ -5,14 +5,17 @@ import {
   Route,
 } from 'react-router-dom';
 import {
-  ContentsPage,
   MailPage,
   MainPage,
   ProfilePage,
-  ReportPage,
   UsersReportPage,
   UsersDropPage,
   UsersPage,
+  BannerPage,
+  PopUpPage,
+  AskPage,
+  CommentsPage,
+  ContentsReportPage,
 } from '@/pages';
 import { Header, Login, MenuTab } from '@/components';
 import { styled } from 'styled-components';
@@ -46,8 +49,11 @@ const Router = createBrowserRouter(
       <Route path="/users" element={<UsersPage />} />
       <Route path="/users/drop" element={<UsersDropPage />} />
       <Route path="/users/report" element={<UsersReportPage />} />
-      <Route path="/contents" element={<ContentsPage />} />
-      <Route path="/stat" element={<ReportPage />} />
+      <Route path="/contents" element={<BannerPage />} />
+      <Route path="/contents/pop" element={<PopUpPage />} />
+      <Route path="/contents/ask" element={<AskPage />} />
+      <Route path="/contents/comments" element={<CommentsPage />} />
+      <Route path="/contents/report" element={<ContentsReportPage />} />
     </Route>
   )
 );
